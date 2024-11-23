@@ -3,340 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Military Forces</title>
     <style>
+        /* General Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        .main {
-            width: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://t4.ftcdn.net/jpg/06/70/05/71/360_F_670057157_ru2QhukixXgzrCYYbvUXTE9aFdxdI5Lw.jpg);
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-            animation: backgroundAnimation 15s infinite;
-        }
-
-        @keyframes backgroundAnimation {
-            0% {background-position: center;}
-            50% {background-position: top;}
-            100% {background-position: center;}
-        }
-
-        .logo {
-            color: #ff7200;
-            font-size: 80px;
-            font-family: Arial;
-            padding-left: 25px;
-            margin-top: 19px;
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://t4.ftcdn.net/jpg/06/70/05/71/360_F_670057157_ru2QhukixXgzrCYYbvUXTE9aFdxdI5Lw.jpg') 
+                center/cover no-repeat;
         }
 
         .navbar {
-            width: 1200px;
-            height: 75px;
-            margin: auto;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
         }
 
-        .icon {
+        .logo {
             display: flex;
             align-items: center;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .menu1 {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            margin-left: 329px;
-            margin-top: 29px;
-        }
-
-        .menu1 li {
-            margin-right: 20px;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .menu1 li a {
-            text-decoration: none;
-            color: #000;
-            transition: color 0.2s ease;
-        }
-
-        .menu1 li a:hover {
+            font-size: 24px;
             color: #ff7200;
         }
 
-        .menu2 {
-            display: flex;
-            align-items: center;
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        .menu {
             list-style: none;
-            margin-left: 30px;
-            color: black;
-            margin-top: -44px;
-            animation: slideIn 1s ease-out;
-            flex-wrap: wrap;
+            display: flex;
+            gap: 20px;
         }
 
-        .menu2 li {
-            margin-right: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            color: black;
-        }
-
-        .menu2 li a {
+        .menu li a {
             text-decoration: none;
-            color: #000;
-            transition: color 0.2s ease;
+            font-size: 18px;
+            color: #fff;
+            transition: color 0.3s;
         }
 
-        .menu2 li a:hover {
+        .menu li a:hover {
             color: #ff7200;
         }
 
         .content {
-            width: 1200px;
-            height: auto;
-            margin: auto;
-            color: #fff;
-            position: relative;
-        }
-
-        .content .par {
-            padding-left: 20px;
-            padding-bottom: 10px;
-            font-family: Arial;
-            letter-spacing: 1.2px;
-            line-height: 30px;
-            font-size: x-large;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
         }
 
         .content h1 {
-            font-family: 'Times New Roman';
-            font-size: 65px;
-            padding-left: 20px;
-            margin-top: 6%;
-            letter-spacing: 2px;
-            animation: fadeInDown 1s ease-out;
+            font-size: 48px;
+            margin-bottom: 20px;
         }
 
-        .content .cn {
-            width: 160px;
-            height: 40px;
-            background: #ff7200;
-            border: none;
-            margin-bottom: 10px;
-            margin-left: 20px;
-            font-size: 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: .4s ease;
-        }
-
-        .content .cn a {
-            text-decoration: none;
-            color: #000;
-            transition: .3s ease;
-        }
-
-        .cn:hover {
-            background-color: #fff;
-        }
-
-        .content span {
+        .content h1 span {
             color: #ff7200;
-            font-size: 65px;
+        }
+
+        .content ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .content ul li {
+            font-size: 20px;
+            margin: 10px 0;
         }
 
         .form {
-            width: 335px;
-            height: 350px;
-            background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-            position: absolute;
-            top: -25px;
-            left: 850px;
-            transform: translate(0%,-5%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
             border-radius: 10px;
-            padding: 25px;
-            padding-left: 10px;
-            animation: slideIn 1.5s ease-in-out;
         }
 
         .form h2 {
-            width: 294px;
-            font-family: sans-serif;
-            text-align: center;
-            color: #ff7200;
-            font-size: 22px;
-            background-color: #fff;
-            border-radius: 10px;
-            margin: 2px;
-            padding: 8px;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
         .form input {
-            width: 314px;
-            height: 35px;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
             background: transparent;
-            border-bottom: 1px solid #ff7200;
-            border-top: none;
-            border-right: none;
-            border-left: none;
+            border: 1px solid #ff7200;
+            border-radius: 5px;
             color: #fff;
-            font-size: 18px;
-            letter-spacing: 1px;
-            margin-top: 43px;
-            font-family: sans-serif;
-            animation: fadeIn 1s ease-in-out;
         }
 
         .form input:focus {
             outline: none;
         }
 
-        ::placeholder {
-            color: #fff;
-            font-family: Arial;
-        }
-
-        .btnn {
-            width: 314px;
-            height: 40px;
+        .form button {
+            width: 100%;
+            padding: 10px;
             background: #ff7200;
             border: none;
-            margin-top: 30px;
+            border-radius: 5px;
             font-size: 18px;
-            border-radius: 10px;
-            cursor: pointer;
             color: #fff;
-            transition: 0.4s ease;
+            cursor: pointer;
+            transition: background 0.3s;
         }
 
-        .btnn:hover {
+        .form button:hover {
             background: #fff;
             color: #ff7200;
         }
 
-        .btnn a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-
-        @keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(100%);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        /* Responsive Design */
+        /* Responsive Styles */
         @media (max-width: 768px) {
-            .navbar {
+            .logo {
+                font-size: 18px;
+            }
+
+            .menu {
                 flex-direction: column;
-                align-items: flex-start;
-                padding: 10px;
-            }
-
-            .menu1 {
-                margin: 0;
-                padding: 0;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .menu1 li {
-                margin-bottom: 10px;
-            }
-
-            .content {
-                width: 90%;
-                margin: auto;
-            }
-
-            .form {
-                width: 90%;
-                left: 50%;
-                transform: translate(-50%, 0%);
-                position: static;
+                align-items: center;
+                gap: 10px;
             }
 
             .content h1 {
-                font-size: 50px;
+                font-size: 32px;
             }
 
-            .menu2 {
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 0 auto;
+            .content ul li {
+                font-size: 18px;
             }
 
-            .menu2 li {
-                margin-bottom: 10px;
-                font-size: 22px;
+            .form {
+                padding: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Armed_forces_logo.svg/2048px-Armed_forces_logo.svg.png" alt="Military Logo" class="logo-img" style="width: 80px; height:80px;">
-                <h2 class="logo" style="font-size: 75px;">Military Forces</h2>
-                <ul class="menu1">
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Armed_forces_logo.svg/2048px-Armed_forces_logo.svg.png" alt="Military Logo">
+                <h2>Military Forces</h2>
             </div>
-        </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <div class="content">
-            <h1>Exploring the world of <br><span>Military forces</span> <br></h1>
-            <div class="menu2">
-                <ul>
-                    <li>Military Soldiers</li>
-                    <li>Military Units</li>
-                    <li>Military Equipments</li>
-                    <li>Operations</li>
-                    <li>Communication between units</li>
-                </ul>
-            </div>
-            <form name="form" method="POST">
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="text" name="username" placeholder="Enter Username Here" required>
-                    <input type="password" name="password" placeholder="Enter Password Here" required>
-                    <button class="btnn"><a href="#">Login</a></button>
-                </div>
+            <h1>Exploring the World of <br><span>Military Forces</span></h1>
+            <ul>
+                <li>Military Soldiers</li>
+                <li>Military Units</li>
+                <li>Military Equipment</li>
+                <li>Operations</li>
+                <li>Communication Between Units</li>
+            </ul>
+        </div>
+        <div class="form">
+            <h2>Login Here</h2>
+            <form action="#">
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
             </form>
         </div>
-    </div>
+    </main>
 </body>
 </html>
