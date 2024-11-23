@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://t4.ftcdn.net/jpg/06/70/05/71/360_F_670057157_ru2QhukixXgzrCYYbvUXTE9aFdxdI5Lw.jpg);
+   background-size: cover;
+}
+.logo{
+    color: rgb(9, 6, 6);
+    font-size: 50px;
+    /* float: left; */
+    padding-bottom: 28px;
+    padding-left: 421px;
+    
+}
+.container{
+    width: 32%;
+    height: 50%;
+    color:black;
+    font-size: 25px;
+    padding-left: 46px;
+    padding-right: 80px;
+    padding-top: 10px;
+    margin: 27px 336px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.box-1{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border-color: black;
+}
+.box-2{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-3{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-4{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-5{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.btnn{
+    width: 156px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-left: 29px;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <div class="icon">
+        <h2 class="logo">Military Units</h2>
+    </div> 
+    <form  action="units.php" method="post">
+    <!-- <fieldset> -->
+    <div class="container">
+    Enter Unitname : <input type="text" name="unitname" placeholder="Enter unit name" class="box-1"><br/>
+    Enter unit ID : <input type="number" name="unitid" placeholder="Enter unit ID" class="box-2"><br/>
+    Enter Unittype : <input type="text" name="unittype" placeholder="Enter unit type" class="box-3"><br/>
+    Enter location : <input type="text"  name="unitlocation" placeholder="Enter base location" class="box-4"><br/>
+    Enter number of soldiers :<input type="number" name="noofsoldiers" placeholder="Enter number of soldiers in the unit" class="box-5"><br/>
+    <button class="btnn"  type="submit" name="submit" >Submit</button>
+    <button class="btnn"><a href="combinedpage.php">Back</a></button>
+    </div>
+    <!-- </fieldset> -->
+    </form>
+</body>
+</html>

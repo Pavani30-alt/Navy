@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://t4.ftcdn.net/jpg/06/70/05/71/360_F_670057157_ru2QhukixXgzrCYYbvUXTE9aFdxdI5Lw.jpg);
+   background-size: cover;
+   animation: backgroundAnimation 15s infinite;
+  
+}
+.logo{
+    color:#000000;
+    font-size: 50px;
+    /* float: left; */
+    padding-bottom: -13px;
+    padding-left: 400px;
+    
+}
+.container{
+    width: 36%;
+    height: 50%;
+    color:#000000;
+    font-size: 20px;
+    padding-left: 46px;
+    padding-right: 80px;
+    padding-top: 10px;
+    margin: 34px 312px;
+    border: 5px solid black;
+    border-radius: 25px;
+    margin-left: 400px;
+}
+.box-1{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-2{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-3{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-4{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-5{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-6{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-7{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.btnn{
+    width: 208px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+</style>
+<body>
+    <div class="icon">
+        <h2 class="logo">Soldiers information</h2>
+    </div> 
+    <form   method="post">
+    <!-- <fieldset> -->
+    <div class="container">
+    Enter your firstname : <input type="text" name="firstname" placeholder="Enter your firstname" class="box-1"><br/>
+    Enter your lastname : <input type="text" name="lastname" placeholder="Enter your lastname" class="box-2"><br/>
+    Enter your unit ID : <input type="number" name="unitid" placeholder="Enter your unit ID" class="box-3"><br/>
+    Enter your contact number :  <input type="number" name="phonenumber" placeholder="Enter your contact number" class="box-4"><br/>
+    Enter your date of birth : <input type="date" size="30" name="dateofbirth" class="box-5"><br/>
+    Enter your rank : <input type="number" name="rank" placeholder="Enter your rank" class="box-6"><br/>
+    Enter your emial : <input type ="email" name = "email" placeholder = "Enter your email" class="box-7"><br/>
+    Enter your gender : <input type="text" name="gender" placeholder="Enter Male/Female" class="box-7"></br>
+    <button class="btnn"  type="submit" name="login" >Submit</button>
+    <button class="btnn"><a href="combinedpage.php">Back</a></button>
+    </div>
+    <!-- </fieldset> -->
+    </form>
+</body>
+</html>

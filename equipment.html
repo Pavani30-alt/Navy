@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://t4.ftcdn.net/jpg/06/70/05/71/360_F_670057157_ru2QhukixXgzrCYYbvUXTE9aFdxdI5Lw.jpg);
+   background-size: cover;
+}
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    /* float: left; */
+    padding-bottom: 28px;
+    padding-left: 363px;
+    
+}
+.container{
+    width: 35%;
+    height: 50%;
+    color: rgb(3, 2, 2);
+    font-size: 25px;
+    padding-left: 46px;
+    padding-right: 80px;
+    padding-top: 10px;
+    margin: 27px 312px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.box-1{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-2{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-3{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.box-4{
+    width: 349px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.btnn{
+    width: 201px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <div class="icon">
+        <h2 class="logo">Military Equipments</h2>
+    </div> 
+    <form   method="POST">
+    <!-- <fieldset> -->
+    <div class="container">
+    Enter Missile name : <input type="text" name="missilename" placeholder="Enter missile name" class="box-1"><br/>
+    Enter Missile ID : <input type="number" name="missileid" placeholder="Enter missile ID" class="box-2"><br/>
+    Enter Missile type : <input type="text" name="missiletype" placeholder="Enter missile type" class="box-3"><br/>
+    Enter Missile status : <input type="text"  name="missilestatus" placeholder="Enter status of the missile" class="box-4"><br/>
+    <button class="btnn"  type="submit" name="submit" >Submit</button>
+    <button class="btnn"><a href="combinedpage.php">Back</a></button>
+    </div>
+    <!-- </fieldset> -->
+    </form>
+</body>
+</html>
